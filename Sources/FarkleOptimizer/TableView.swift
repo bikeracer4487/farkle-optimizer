@@ -175,7 +175,7 @@ struct AdvicePanel: View {
                     Text("OTHER CHOICES").font(Theme.display(12)).tracking(2).foregroundStyle(Theme.inkSoft).padding(.top, 6)
                     ScrollView {
                         VStack(spacing: 6) {
-                            ForEach(advice.evaluations.dropFirst().prefix(10)) { e in alternativeRow(e) }
+                            ForEach(advice.evaluations.dropFirst()) { e in alternativeRow(e) }
                         }
                     }
                 }
